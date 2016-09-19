@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RubyActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baguette.studioh.baugette.RubyActivity"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_gravity="top"
+        android:id="@+id/toolbar"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <Button
+                android:id="@+id/back"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/ic_arrow_back_white_48dp"
+                android:layout_marginRight="10dp"
+                android:onClick="back"/>
+            <TextView
+                android:id="@+id/profileTopBarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="7dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/write"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="21dp"
+                    android:textColor="#111111"
+                    android:text="Upload your memory"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#888888" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/login_bg"
+                    android:scaleType="centerCrop" />
+                <EditText
+                    android:background="#7fffffff"
+                    android:id="@+id/postMemoryTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:inputType="text"
+                    android:hint="ABOUT THIS MEMORY"
+                    android:textColorHint="#000000"
+                    android:textColor="#000000"
+                    android:typeface="normal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentTop="false"
+                    android:gravity="top" />
+            </RelativeLayout>
+            <TextView
+                android:onClick="postConfirmClick"
+                android:layout_marginTop="10dp"
+                android:background="#00FFFFFF"
+                android:gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:text="POST" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

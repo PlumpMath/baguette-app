@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AccountInfoActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.baguette.studioh.baugette.AccountInfoActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_gravity="top"
+        android:id="@+id/toolbar"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <Button
+                android:id="@+id/back"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/ic_arrow_back_white_48dp"
+                android:layout_marginRight="10dp"
+                android:onClick="back"/>
+            <TextView
+                android:text="Account Information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/person_ico"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="21dp"
+                    android:textColor="#111111"
+                    android:text="Account Information"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#888888"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="#55000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:inputType="text"
+                android:text="ID"
+                android:textSize="18dp"
+                android:textColorHint = "#000000"
+                android:textColor = "#000000"
+                android:typeface="normal"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/accountInfoID" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#55000000">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#FF000000"
+                    android:text="USERNAME:"
+                    android:textSize="18dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:inputType="text"
+                    android:background="#00000000"
+                    android:hint="ID"
+                    android:textColorHint = "#000000"
+                    android:textColor = "#000000"
+                    android:typeface="normal"
+                    android:id="@+id/AccountInfoUsername" />
+            </LinearLayout>
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="#55000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:inputType="textWebPassword"
+                android:hint="PASSWORD"
+                android:textSize="18dp"
+                android:textColorHint = "#000000"
+                android:textColor = "#000000"
+                android:typeface="normal"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/AccountInfoPW" />
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:background="#55000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:inputType="textWebPassword"
+                android:hint="CONFIRM PASSWORD"
+                android:textSize="18dp"
+                android:textColorHint = "#000000"
+                android:textColor = "#000000"
+                android:typeface="normal"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/AccountInfoPWConfirm" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#55000000">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#FF000000"
+                    android:text="QUOTE:"
+                    android:textSize="18dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:inputType="text"
+                    android:background="#00000000"
+                    android:hint="QUOTE"
+                    android:textColorHint = "#000000"
+                    android:textColor = "#000000"
+                    android:typeface="normal"
+                    android:id="@+id/AccountInfoQuote" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/accountInfoUpdateBtn"
+                android:onClick="onACIUpdateCick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn_bg_dark"
+                android:layout_margin="5dp"
+                android:text="SAVE"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:textColor = "#000000" />
+            <RelativeLayout
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:gravity="center_vertical"
+                android:onClick="accountProfileSignatureClick"
+                android:src="@drawable/profile_example"
+                android:background="#BBBBBB">
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:id="@+id/accountProfileImage"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+                <View android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#77FFFFFF" />
+                <TextView
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FF000000"
+                    android:text="PROFILE SIGNATURE"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:onClick="AccountBGChangeBtn"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:gravity="center_vertical"
+                android:background="#BBBBBB">
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/signup_bg"
+                    android:id="@+id/accountBackgroundImage"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+                <View android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#77FFFFFF" />
+                <TextView
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textColor="#FF000000"
+                    android:text="BACKGROUND IMAGE"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

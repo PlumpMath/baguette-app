@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SNSMainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.baguette.studioh.baugette.SNSMainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <!--TODO: Add menu-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:text="Baguette"/>
+
+        <Button
+            android:id="@+id/mainSearch"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/ic_search_white_24dp"
+            android:layout_marginRight="20dp"
+            android:onClick="mainSearchClick"
+            android:layout_gravity="right"/>
+        <Button
+            android:id="@+id/mainDoodleboard"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/ic_aspect_ratio_white_24dp"
+            android:layout_marginRight="20dp"
+            android:onClick="mainDoodleBoardClick"
+            android:layout_gravity="right"/>
+        <Button
+            android:id="@+id/mainSettings"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/ic_settings_white_24dp"
+            android:layout_marginRight="20dp"
+            android:onClick="mainSettingsOnClick"
+            android:layout_gravity="right"/>
+        <Button
+            android:id="@+id/mainPostWrite"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/ic_create_white_24dp"
+            android:layout_marginRight="20dp"
+            android:onClick="mainPostWriteClick"
+            android:layout_gravity="right"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id='@+id/mainEmptyMessage'
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="\nNothing to show!"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:text="\nSearch and follow your friends to\n see their memories."/>
+    </LinearLayout>
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:smoothScrollbar="true"
+        android:id="@+id/feedListview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible"/>
+</LinearLayout>

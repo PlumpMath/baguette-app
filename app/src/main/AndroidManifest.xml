@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baguette.studioh.baugette">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true">
+
+        <!-- Consider removing largeHeap later -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SNSMainActivity"
+            android:theme="@style/SNSMainTheme" />
+        <activity
+            android:name=".SignupFinalizeActivity"
+            android:label="@string/title_activity_signup_finalize"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:theme="@style/SNSMainTheme" />
+        <activity
+            android:name=".AccountInfoActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:theme="@style/SNSMainTheme" />
+        <activity
+            android:name=".KurosawaActivity"
+            android:theme="@style/SNSMainTheme" />
+        <activity
+            android:name=".RubyActivity"
+            android:theme="@style/SNSMainTheme" />
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/SNSMainTheme" />
+        <activity
+            android:name=".ExplainBugActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".LifeVideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar.FullScreen" />
+        <activity
+            android:name=".DrawingActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".DrawingTemplateActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".StorytellingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SearchUserActivity"
+            android:theme="@style/SNSMainTheme"/>
+    </application>
+
+</manifest>

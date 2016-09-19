@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/SignupActivity"
+    android:layout_height="match_parent"
+    tools:context="com.baguette.studioh.baugette.SignupActivity">
+
+    <ImageView
+        android:src="@drawable/signup_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/signup"
+            android:layout_marginBottom="25dp" />
+        <EditText
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="#55FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupID"
+            android:fontFamily="sans-serif"
+            android:inputType="text"
+            android:hint="ID"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:typeface="normal"
+            android:paddingLeft="7dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="#55FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupUsrname"
+            android:fontFamily="sans-serif"
+            android:inputType="text"
+            android:hint="USERNAME"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:typeface="normal"
+            android:paddingLeft="7dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="#55FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupPassword"
+            android:inputType="textWebPassword"
+            android:fontFamily="sans-serif"
+            android:hint="PASSWORD"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:typeface="normal"
+            android:paddingLeft="7dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="#55FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupPasswordAgain"
+            android:inputType="textWebPassword"
+            android:fontFamily="sans-serif"
+            android:hint="CONFIRM PASSWORD"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:typeface="normal"
+            android:paddingLeft="7dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+        <Button
+            android:id="@+id/signupNextStep"
+            android:onClick="onSignupNextStepClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_bg"
+            android:layout_margin="8dp"
+            android:text="NEXT"
+            android:typeface="sans"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</RelativeLayout>

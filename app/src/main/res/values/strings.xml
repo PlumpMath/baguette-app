@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Baugette</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="title_activity_signup_finalize">SignupFinalizeActivity</string>
+    <string name="quote_note"><u>Your own quote will be displayed\non your collection page.</u></string>
+    <string name="next">NEXT</string>
+    <string name="submit">SUBMIT</string>
+    <string name="shitText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate tincidunt tellus eget egestas. Integer blandit eu justo in sodales. Duis in orci eu neque finibus pretium. Nullam a neque sit amet mauris consequat vehicula. Phasellus a lorem quis lorem fermentum varius. Suspendisse potenti. Vivamus tempus et turpis quis faucibus. In dictum erat ac volutpat suscipit. Aenean ut porta odio. Cras volutpat tincidunt tincidunt. Mauris lectus ligula, accumsan eu ligula eget, finibus convallis metus. In sapien lacus, dictum in gravida at, fermentum vitae magna. Curabitur pretium hendrerit tincidunt. Fusce commodo in nisi id sollicitudin.</string>
+</resources>
