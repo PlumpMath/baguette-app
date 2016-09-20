@@ -37,11 +37,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:design:23.2.1'
-    compile project(path: ':volley')
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.makeramen:roundedimageview:2.2.1'
     compile 'org.lucasr.smoothie:smoothie:0.1.0'
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'com.squareup.okio:okio:1.7.0'
-    compile 'com.simplify:ink:0.2.1'
+    compile project(path: ':volley')
+    compile project(':ink')
 }

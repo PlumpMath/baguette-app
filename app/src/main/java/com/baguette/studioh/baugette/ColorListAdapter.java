@@ -9,11 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 
+import com.baguette.studioh.baugette.R;
+
 import java.util.ArrayList;
 
-/**
- * Created by studioh on 8/22/16.
- */
 public class ColorListAdapter implements ListAdapter {
     private ArrayList<ColorItem> ColorItemList = new ArrayList<ColorItem>();
 
@@ -28,13 +27,19 @@ public class ColorListAdapter implements ListAdapter {
     }
 
     @Override
-    public int getCount() { return ColorItemList.size(); }
+    public int getCount() {
+        return ColorItemList.size();
+    }
 
     @Override
-    public Object getItem(int position) { return ColorItemList.get(position); }
+    public Object getItem(int position) {
+        return ColorItemList.get(position);
+    }
 
     @Override
-    public long getItemId(int position) { return position; }
+    public long getItemId(int position) {
+        return position;
+    }
 
     @Override
     public boolean hasStableIds() {
@@ -42,7 +47,7 @@ public class ColorListAdapter implements ListAdapter {
     }
 
     @Override
-    public View getView (int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         final Context context = parent.getContext();
 
         if (convertView == null) {
@@ -50,7 +55,7 @@ public class ColorListAdapter implements ListAdapter {
             convertView = infl.inflate(R.layout.colorgrid, parent, false);
         }
         ColorItem ci = ColorItemList.get(position);
-        ((ImageView)(convertView.findViewById(R.id.colorItem))).setBackgroundColor(Color.parseColor(ci.getColorString()));
+        ((ImageView) (convertView.findViewById(R.id.colorItem))).setBackgroundColor(Color.parseColor(ci.getColorString()));
         return convertView;
     }
 
@@ -66,7 +71,7 @@ public class ColorListAdapter implements ListAdapter {
 
     @Override
     public boolean isEmpty() {
-        return ColorItemList.size()==0;
+        return ColorItemList.size() == 0;
     }
 
     public void addItem(String Color) {
